@@ -4,17 +4,20 @@ const createError = require('http-errors');
 const randomInt = require('./routes/rInt');
 const randomIntList = require('./routes/rIntList')
 
+
 const server = express();
 
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 
-server.use('/public', express.static(path.join(__dirname, 'style')));
+server.use('/public', express.static(path.join(__dirname, 'public')));
 
 server.get('/game', (req, res) => {
     const rIntValue = randomInt(1, 10);
-    const rIntListValue = randomIntList(1, 10);
-    res.render('index', { rIntValue, rIntListValue });
+    const rIntListValue1 = randomIntList(1, 10);
+    const rIntListValue2 = randomIntList(1, 10);
+    const rIntListValue3 = randomIntList(1, 10);
+    res.render('index', { rIntValue, rIntListValue1, rIntListValue2, rIntListValue3,});
 })
 
 server.use((req, res, next) => {

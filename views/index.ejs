@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>intGame</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
     
@@ -16,9 +16,17 @@
             <h1> Потрібний INT: <%= rIntValue %></h1>
             <br>
             Достпуні цифри:
-            <span> <%= rIntListValue %> </span><button class="plus1">+</button>
-            
+            <br>
+            <span> <%= rIntListValue1 %> </span><button class="plus1">+</button>
+            <br>
+            <span> <%= rIntListValue2 %> </span><button class="plus2">+</button>
+            <br>
+            <span> <%= rIntListValue3 %> </span><button class="plus3">+</button>
+            <br>
+            <br>
+            <button class="generate">Згенерувати ще</button>
 
+            <h1 class="counter">Кроки: <%=  %></h1>
         </div>
 
     </div>

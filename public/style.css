@@ -1,0 +1,7 @@
+.gblock {
+    border: 3px solid black;
+    width: 200px;
+    height: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+}
