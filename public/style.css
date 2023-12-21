@@ -5,3 +5,10 @@
     padding: 30px;
     box-sizing: border-box;
 }
+
+.counter {
+    border: 3px solid black;
+    height: 20px;
+    width: 90px;
+    font-size: 15px;
+}

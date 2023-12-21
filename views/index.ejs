@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>intGame</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     
@@ -17,25 +18,21 @@
             <br>
             Достпуні цифри:
             <br>
-            <span> <%= rIntListValue1 %> </span><button class="plus1">+</button>
+            <span class="rIntListValue1"> <%= rIntListValue1 %> </span><button class="plus1">+</button>
             <br>
-            <span> <%= rIntListValue2 %> </span><button class="plus2">+</button>
+            <span class="rIntListValue2"> <%= rIntListValue2 %> </span><button class="plus2">+</button>
             <br>
-            <span> <%= rIntListValue3 %> </span><button class="plus3">+</button>
+            <span class="rIntListValue3"> <%= rIntListValue3 %> </span><button class="plus3">+</button>
             <br>
             <br>
             <button class="generate">Згенерувати ще</button>
 
-            <h1 class="counter">Кроки: <%=  %></h1>
+            <h1 class="counter"> </h1>
         </div>
 
     </div>
-
-    <script>
-        // const run = async () = {
-        //     const result = await axios.post('./game', {});
-        // }
-        // run()
+    <script src="/scripts/main.js">
+         
     </script>
 </body>
 </html>
